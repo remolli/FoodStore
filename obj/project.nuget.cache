@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KCiOB+M8+j8crjRZPVlzj/hyrdQkXFi24OthVfMa54TBRNuMRHgTQXa0umdm64k5E7NdG8qEIIjRAR1s10pigg==",
+  "dgSpecHash": "IjQH6Jh0LKKp/UE5Tsh7MOWPJ1pc4D/yLIhiolaVWSXfwShiQP56CISMDUN1rZ/RgD2p7LzU8o+0zhYtFquuhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\lia\\Desktop\\FoodStore\\FoodStore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
