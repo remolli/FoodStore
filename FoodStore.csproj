@@ -6,4 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Topicos\**" />
+    <Content Remove="Views\Topicos\**" />
+    <EmbeddedResource Remove="Views\Topicos\**" />
+    <None Remove="Views\Topicos\**" />
+  </ItemGroup>
+
 </Project>
