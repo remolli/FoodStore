@@ -35,7 +35,10 @@ namespace FoodStore.API
             return autoCompleteContent;
         }
 
-        IngredientSearch
+        public async Task IngredientSearch(string search)
+        {
+
+        }
         
         GetIngredientInfo
 
