@@ -1,4 +1,6 @@
-﻿using FoodStore.Models;
+﻿using FoodStore.Controllers.Topicos;
+using FoodStore.Models;
+using Microsoft.AspNetCore.SignalR;
 using Newtonsoft.Json;
 
 namespace FoodStore.API
@@ -13,32 +15,18 @@ namespace FoodStore.API
             client = new HttpClient();
         }
 
-        public async Task<AutoCompleteSearch[]> AutoCompleteSearch (string search, string topico)
+        //
+        // <------ INGREDIENTS ------->
+        //
+
+        public async Task<AutoCompleteSearch[]> AutoCompleteSearchIngredients(string search)
         {
             HttpResponseMessage response;
 
-            if (topico == "recipes")
-            {
-                response = await client.GetAsync(
-                    "https://api.spoonacular.com/recipes/autocomplete?apiKey=" +
-                    apiKey + "&number=5&query=" + search);
-            }
-            else if(topico == "ingredients")
-            {
-                response = await client.GetAsync(
-                    "https://api.spoonacular.com/food/ingredients/autocomplete?apiKey=" +
-                    apiKey + "&number=5&query=" + search);
-            }
-            else if(topico == "products")
-            {
-                response = await client.GetAsync(
-                    "https://api.spoonacular.com/food/products/suggest?apiKey=" +
-                    apiKey + "&number=5query=" + search);
-            }
-            else
-            {
-                return null;
-            }
+            response = await client.GetAsync(
+                "https://api.spoonacular.com/food/ingredients/autocomplete?apiKey=" +
+                apiKey + "&number=25&query=" + search);
+
 
             var content = await response.Content.ReadAsStringAsync();
 
@@ -46,6 +34,33 @@ namespace FoodStore.API
 
             return autoCompleteContent;
         }
+
+        IngredientSearch
+        
+        GetIngredientInfo
+
+        //
+        // <------ PRODUCTS ------->
+        //
+
+        public async Task<AutoCompleteSearch[]> AutoCompleteSearchProducts(string search)
+        {
+            HttpResponseMessage response;
+
+            response = await client.GetAsync(
+                "https://api.spoonacular.com/food/products/suggest?apiKey=" +
+                apiKey + "&number=25query=" + search);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            var autoCompleteContent = JsonConvert.DeserializeObject<AutoCompleteSearch[]>(content);
+
+            return autoCompleteContent;
+        }
+
+        ProductSearch
+
+        GetProductInfo
 
     }
 }
