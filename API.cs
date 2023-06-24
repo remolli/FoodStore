@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace FoodStore.API
+namespace FoodStore
 {
     public class API
     {
