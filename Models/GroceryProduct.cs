@@ -18,24 +18,24 @@ namespace FoodStore.Models
 
         public string[] importantBadges { get; set; }
 
-        public long ingredientCount { get; set; }
+        public double ingredientCount { get; set; }
         public object generatedText { get; set; }
             
         public string ingredientList { get; set; }
 
         public Ingredient[] ingredients { get; set; }
 
-        public long likes { get; set; }
+        public double likes { get; set; }
 
         public string aisle { get; set; }
 
         public Nutrition nutrition { get; set; }
 
-        public long price { get; set; }
+        public double price { get; set; }
 
         public Servings servings { get; set; }
 
-        public long spoonacularScore { get; set; }
+        public double spoonacularScore { get; set; }
     }
 
     public partial class Ingredient
@@ -57,7 +57,7 @@ namespace FoodStore.Models
     {
         public double percentProtein { get; set; }
             
-        public long percentFat { get; set; }
+        public double percentFat { get; set; }
 
         public double percentCarbs { get; set; }
     }
@@ -66,7 +66,7 @@ namespace FoodStore.Models
     {
         public string name { get; set; }
 
-        public long amount { get; set; }
+        public double amount { get; set; }
 
         public string unit { get; set; }
 
@@ -75,8 +75,8 @@ namespace FoodStore.Models
 
     public partial class Servings
     {
-        public long number { get; set; }
-        public long Size { get; set; }
+        public double number { get; set; }
+        public double Size { get; set; }
         public string unit { get; set; }
     }
 }

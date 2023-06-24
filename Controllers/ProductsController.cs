@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FoodStore.Models;
+using Microsoft.AspNetCore.Mvc;
+using RestSharp;
 
 namespace FoodStore.Controllers
 {
@@ -20,7 +22,7 @@ namespace FoodStore.Controllers
             }
             return View(requestDeserialized);
         }
-        public async Task<IActionResult> Product(long id)
+        public async Task<IActionResult> Product(string id)
         {
             if (id == null)
             {
