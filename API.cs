@@ -12,7 +12,7 @@ namespace FoodStore
             var options = new RestClientOptions("https://api.spoonacular.com");
             client = new RestClient(options);
         }
-        public async Task<GroceryProduct> GetGroceryProduct(string id)
+        public async Task<GroceryProduct> GetGroceryProduct(long id)
         {
             var request = new RestRequest($"/food/products/{id}");
             request.AddHeader("apiKey", "3a422ff82d024ed489e4d0b9ca4bcb59");
