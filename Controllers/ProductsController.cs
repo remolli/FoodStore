@@ -20,5 +20,18 @@ namespace FoodStore.Controllers
             }
             return View(requestDeserialized);
         }
+        public async Task<IActionResult> Product(long id)
+        {
+            if (id == null)
+            {
+                return View("Index");
+            }
+            var requestDeserialized = await _api.GetGroceryProduct(id);
+            if (requestDeserialized == null)
+            {
+                return View("Index");
+            }
+            return View(requestDeserialized);
+        }
     }
 }
