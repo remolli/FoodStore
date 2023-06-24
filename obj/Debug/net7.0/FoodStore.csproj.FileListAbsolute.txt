@@ -62,3 +62,5 @@ C:\Users\Win10\Desktop\GITHUB\FoodStore\obj\Debug\net7.0\scopedcss\projectbundle
 C:\Users\Win10\Desktop\GITHUB\FoodStore\obj\Debug\net7.0\FoodStore.csproj.CopyComplete
 C:\Users\Win10\Desktop\GITHUB\FoodStore\obj\Debug\net7.0\FoodStore.genruntimeconfig.cache
 C:\Users\Win10\Desktop\GITHUB\FoodStore\obj\Debug\net7.0\ref\FoodStore.dll
+C:\Users\Win10\Desktop\GITHUB\FoodStore\bin\Debug\net7.0\RestSharp.dll
+C:\Users\Win10\Desktop\GITHUB\FoodStore\bin\Debug\net7.0\System.Text.Json.dll
