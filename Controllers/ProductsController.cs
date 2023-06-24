@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace FoodStore.Controllers.Compra
+namespace FoodStore.Controllers
 {
-    public class PagamentoController : Controller
+    public class ProductsController : Controller
     {
+        // GET: .../Products
         public IActionResult Index()
         {
             return View();

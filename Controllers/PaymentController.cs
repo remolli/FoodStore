@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace FoodStore.Controllers.Compra
+namespace FoodStore.Controllers
 {
-    public class FinalizarController : Controller
+    public class PaymentController : Controller
     {
         public IActionResult Index()
         {
