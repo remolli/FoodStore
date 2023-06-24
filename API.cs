@@ -7,10 +7,8 @@ namespace FoodStore
     public class API
     {
         RestClient client;
-        string apiKey;
-        public API(string apiKey)
+        public API()
         {
-            this.apiKey = apiKey;
             var options = new RestClientOptions("https://api.spoonacular.com");
             client = new RestClient(options);
         }
