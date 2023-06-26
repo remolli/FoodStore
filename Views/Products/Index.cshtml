@@ -4,20 +4,24 @@
     ViewData["Title"] = "Products";
 }
 
-<div class="mx-5 py-2">
-    <form asp-controller="Products" asp-action="Index" class="container vstack border p-3 bg-light" style="border-radius:20px">
+<div class="m-5 py-2">
+    <form asp-controller="Products" asp-action="Index" class="container vstack border p-3 bg-light" style="border-radius:20px;max-width:600px">
         <p class="text-center ">Search your <i>favorite</i> food here!</p>
-        <div class="form-floating mb-3 hstack">
+        <div class="desktop form-floating mb-3 hstack">
             <input type="text" class="form-control" name="search" id="floatingInput" placeholder="Vegetarian Pizza">
             <label for="floatingInput">Search Food</label>
-            <div class="vr mx-5"></div>
+            <div class="vr mx-3"></div>
             <input type="submit" class="btn btn-success py-3 px-4" value="Search">
+        </div>
+        <div class="mobile form-floating mb-3 vstack">
+            <input type="text" class="form-control" name="search" id="floatingInput" placeholder="Vegetarian Pizza">
+            <label for="floatingInput">Search Food</label>
+            <input type="submit" class="btn btn-success py-3 px-4 my-3" value="Search">
         </div>
     </form>
 </div>
-
 <div class="container text-center">
-    <div class="d-flex justify-content-between align-items-center row row-cols-1">
+    <div class="d-flex justify-content-center align-items-center row row-cols-1">
         @foreach (var product in Model.Products)
         {
             <div class="col card m-3" style="max-width:15rem;">
@@ -40,8 +44,8 @@
     }
     .card:hover
     {
-        border-right: 4px solid rgba(0,0,0,0.5);
-        border-bottom: 5px solid rgba(0,0,0,0.7);
+        border-right: 5px solid rgba(0,0,0,0.5);
+        border-bottom: 6px solid rgba(0,0,0,0.7);
         transform:translate(-2px, -2px);
     }
     .card:active
