@@ -13,7 +13,7 @@ namespace FoodStore.Controllers
         {
             if (search == null)
             {
-                search = "pizza";
+                search = "veg";
             }
             var requestDeserialized = await _api.GetSearchGroceryProducts(search);
             if (requestDeserialized == null)
