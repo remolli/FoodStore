@@ -13,6 +13,7 @@
             <div class="vr mx-3"></div>
             <input type="submit" class="btn btn-success py-3 px-4" value="Search">
         </div>
+        <i>Total Products: @Model.TotalProducts</i>
     </form>
     <form asp-controller="Products" asp-action="Index" class="mobile container vstack border p-3 bg-light" style="border-radius:20px;max-width:600px">
         <p class="text-center ">Search your <i>favorite</i> food here!</p>
@@ -21,8 +22,11 @@
             <label for="floatingInput">Search Food</label>
             <input type="submit" class="btn btn-success py-3 px-4 my-3" value="Search">
         </div>
+        <i>Total Products: @Model.TotalProducts</i>
     </form>
 </div>
+
+
 <div class="container text-center">
     <div class="d-flex justify-content-center align-items-center row row-cols-1">
         @foreach (var product in Model.Products)
