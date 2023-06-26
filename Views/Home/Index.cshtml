@@ -3,7 +3,7 @@
 }
 
 <div class="container text-center my-5">
-    <h1 class="display-1" style="transform:scale(1.25,1.25)"><i class="text-success">Food</i><i class="text-danger">Store</i></h1>
+    <h1 class="display-1" style="transform:scale(1.25,1.25)"><strong><i class="text-success">Food</i><i class="text-danger">Store</i></strong></h1>
     <p class="" style="font-size:20px"><i>This store is only <strong>yours</strong>. Have fun!</i></p>
 </div>
 
@@ -27,6 +27,49 @@
     </form>
 </div>
 
-<div class="container">
-
+<div class="text-center py-5 my-5">
+    <h2 class="display-5 py-3 my-5 text-danger border-bottom border-success"><strong><i>Categories</i></strong></h2>
 </div>
+<div class="container categories row row-cols-sm-auto row-cols-1 d-flex justify-content-between align-items-center">
+    <a asp-controller="Products" asp-route-search="croissant" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Breakfast</h5>
+        <img src="~/breakfast.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+    <a asp-controller="Products" asp-route-search="sandwich" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Burguer</h5>
+        <img src="~/burger.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+    <a asp-controller="Products" asp-route-search="snacks" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Snacks</h5>
+        <img src="~/chips.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+    <a asp-controller="Products" asp-route-search="cola" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Drinks</h5>
+        <img src="~/drink.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+    <a asp-controller="Products" asp-route-search="pasta" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Macaroni</h5>
+        <img src="~/macarrone.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+    <a asp-controller="Products" asp-route-search="pizza" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Pizza</h5>
+        <img src="~/pizza.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+    <a asp-controller="Products" asp-route-search="japan" class="col m-2 d-flex justify-content-center align-items-center border border-success" style="max-width:252px;">
+        <h5 class="position-absolute display-6 text-white border border-2 bg-success bg-opacity-50 px-5 py-2" style="border-radius:8px">Sushi</h5>
+        <img src="~/sushi.jpg" class="img-fluid" style="max-width:250px" />
+    </a>
+</div>
+
+<style>
+    .categories a{
+        opacity: 80%;
+        border-radius: 70px;
+        transition: .15s;
+    }
+    .categories a:hover{
+        opacity: 100%;
+        letter-spacing: 2px;
+        border-radius:35px;
+    }
+</style>
