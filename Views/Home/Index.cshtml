@@ -8,18 +8,25 @@
 </div>
 
 <div class="m-5 py-4">
-    <form asp-controller="Products" asp-action="Index" class="container vstack border p-3 bg-light" style="border-radius:20px;max-width:600px">
+    <form asp-controller="Products" asp-action="Index" class="desktop container vstack border p-3 bg-light" style="border-radius:20px;max-width:600px">
         <p class="text-center ">Search your <i>favorite</i> food here!</p>
-        <div class="desktop form-floating mb-3 hstack">
+        <div class="form-floating mb-3 hstack">
             <input type="text" class="form-control" name="search" id="floatingInput" placeholder="Vegetarian Pizza">
             <label for="floatingInput">Search Food</label>
             <div class="vr mx-3"></div>
             <input type="submit" class="btn btn-success py-3 px-4" value="Search" >
         </div>
-        <div class="mobile form-floating mb-3 vstack">
+    </form>
+    <form asp-controller="Products" asp-action="Index" class="mobile container vstack border p-3 bg-light" style="border-radius:20px;max-width:600px">
+        <p class="text-center ">Search your <i>favorite</i> food here!</p>
+        <div class="form-floating mb-3 vstack">
             <input type="text" class="form-control" name="search" id="floatingInput" placeholder="Vegetarian Pizza">
             <label for="floatingInput">Search Food</label>
             <input type="submit" class="btn btn-success py-3 px-4 my-3" value="Search">
         </div>
     </form>
+</div>
+
+<div class="container">
+
 </div>
