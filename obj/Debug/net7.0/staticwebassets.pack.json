@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\FoodStore.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\breakfast.jpg",
+      "PackagePath": "staticwebassets\\breakfast.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\burger.jpg",
+      "PackagePath": "staticwebassets\\burger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\carrinho-de-compras.png",
+      "PackagePath": "staticwebassets\\carrinho-de-compras.png"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\chips.jpg",
+      "PackagePath": "staticwebassets\\chips.jpg"
+    },
+    {
       "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\drink.jpg",
+      "PackagePath": "staticwebassets\\drink.jpg"
     },
     {
       "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\favicon.ico",
@@ -243,6 +263,22 @@
     {
       "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\macarrone.jpg",
+      "PackagePath": "staticwebassets\\macarrone.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\morango.png",
+      "PackagePath": "staticwebassets\\morango.png"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\pizza.jpg",
+      "PackagePath": "staticwebassets\\pizza.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Win10\\Desktop\\GITHUB\\FoodStore\\wwwroot\\sushi.jpg",
+      "PackagePath": "staticwebassets\\sushi.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FoodStore.Microsoft.AspNetCore.StaticWebAssets.props",
