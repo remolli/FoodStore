@@ -19,7 +19,6 @@ namespace FoodStore.Models
         public string[] importantBadges { get; set; }
 
         public double ingredientCount { get; set; }
-        public object generatedText { get; set; }
             
         public string ingredientList { get; set; }
 
@@ -76,7 +75,7 @@ namespace FoodStore.Models
     public partial class Servings
     {
         public double number { get; set; }
-        public double Size { get; set; }
+        public string Size { get; set; }
         public string unit { get; set; }
     }
 }
