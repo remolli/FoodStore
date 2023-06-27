@@ -75,7 +75,6 @@ namespace FoodStore.Models
     public partial class Servings
     {
         public double number { get; set; }
-        public string Size { get; set; }
         public string unit { get; set; }
     }
 }
