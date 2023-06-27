@@ -1,4 +1,78 @@
 ﻿@model GroceryProduct
 
 @{
+    ViewData["Title"] = "Product - " + Model.title;
 }
+
+<div class="container row border row-cols-md-2 row-cols-1 border-success">
+    <img class="col img-fluid" style="max-width:500px;" src="https://spoonacular.com/productImages/@Model.id-636x393.@Model.imageType" />
+    <div class="col">
+        <h1 class="fs-4 my-3">@Model.title</h1>
+        <div class="row">
+            <h2 class="col fs-5 text-start">@Model.servings.number @Model.servings.unit</h2>
+            <h1 class="col fs-3 text-end">$@Math.Round(Model.price, 2)</h1>
+        </div>
+        <div class="row">
+            <i class="col border bg-light" style="border-radius:8px">
+                @foreach (var item in Model.badges)
+                {
+                    if (item == "egg_free" || item == "peanut_free" || item == "nut_free" || item == "vegan" ||
+                    item == "vegetarian" || item == "no_artificial_ingredients" || item == "gluten_free")
+                    {
+                        string espaco = "; ";
+                        string format = char.ToUpper(item[0]) + item.Substring(1);
+                        format = format.Replace('_', ' ');
+                        @format@espaco
+                    }
+                }
+            </i>
+            <p class="col fs-5 text-end">Score: @Model.spoonacularScore</p>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-success my-3 py-2" disabled>Comprar (Em breve)</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col m-3 text-center border bg-light">
+        <h2 class="row fs-5 p-2 text-decoration-underline"><i>Nutritional Table</i></h2>
+        <div class="row">
+            @foreach (var item in Model.nutrition.nutrients)
+            {
+                <div class="row py-1 border-bottom">
+                    <p class="m-0 col">@item.amount @item.unit</p>
+                    <p class="m-0 col">@item.name</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="col">
+        @*<div class="row bg-light border" style="max-width:150px">
+            <p class="row fs-5 m-0">Protein %@Model.nutrition.caloricBreakdown.percentProtein</p>
+            <p class="row fs-5 m-0">Carbs %@Model.nutrition.caloricBreakdown.percentCarbs</p>
+            <p class="row fs-5 m-0">Fat %@Model.nutrition.caloricBreakdown.percentFat</p>
+        </div>*@
+        <div class="row m-3">
+            <p class="">
+                <strong>Ingredients:</strong>
+                @foreach (var item in Model.ingredients)
+                {
+                    @if (item == Model.ingredients.FirstOrDefault() || item == Model.ingredients.LastOrDefault())
+                    {
+                        @item.name
+                    }
+                    else
+                    {
+                        string espaco = ", ";
+                        @espaco
+
+                        @item.name
+                    }
+                }.
+            </p>
+        </div>
+    </div>
+
+</div>
