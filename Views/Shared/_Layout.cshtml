@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - FoodStore</title>
+    <link rel="icon" href="~/morango.png"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/FoodStore.styles.css" asp-append-version="true" />
@@ -32,7 +33,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                         <li class="nav-item px-2 mx-1">
-                            <a class="nav-link text-dark btn btn-outline-success" asp-area="" asp-controller="" asp-action=""><img src="~/carrinho-de-compras.png" style="max-height:25px;max-width:25px;" /> Carrinho</a>
+                            <button type="button" class="nav-link text-dark btn btn-outline-success" disabled><img src="~/carrinho-de-compras.png" style="max-height:25px;max-width:25px;" /> Carrinho</button>
                         </li>
                     </ul>
                 </div>
